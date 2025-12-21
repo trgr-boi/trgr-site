@@ -1,61 +1,62 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <title>TRGR</title>
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/note-style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-  <title>TRGR</title>
-  <link rel="stylesheet" href="src/css/fonts.css" />
-  <link rel="stylesheet" href="src/css/style.css" />
-  <link rel="stylesheet" href="src/css/note-style.css" />
-</head>
-
-<body>
-  <header>
-    <button id="toggleDisplayBtn" class="menu-toggle">N</button>
-    <h3><b>TRGR - Home</b></h3>
-    <button onclick="toggleTheme()" class="theme-toggle">T</button>
-  </header>
-  <section>
-    <nav>
-      <!-- TEMPLATE
+  <body>
+    <header>
+      <button id="toggleDisplayBtn" class="menu-toggle">N</button>
+      <h3><b>TRGR - Home</b></h3>
+      <button onclick="toggleTheme()" class="theme-toggle">T</button>
+    </header>
+    <section>
+      <nav>
+        <!-- TEMPLATE
              <a href="#" onclick="loadContent('naamNote.html')" class="link"><p>NoteName</p></a>
              -->
-      <h3>Pages</h3>
-      <hr />
-      <a href="#" onclick="loadContent('home.html')">
-        <p>Home.md</p>
-      </a>
-      <a href="#" onclick="loadContent('linktree.html')">
-        <p>Linktree.md</p>
-      </a>
-      <a href="#" onclick="loadContent('about-me.html')">
-        <p>About.me.md</p>
-      </a>
-      <a href="#" onclick="loadContent('about-page.html')">
-        <p>About.page.md</p>
-      </a>
+        <h3>Pages</h3>
+        <hr />
+        <a href="#" onclick="loadContent('home.html')">
+          <p>Home.md</p>
+        </a>
+        <a href="#" onclick="loadContent('linktree.html')">
+          <p>Linktree.md</p>
+        </a>
+        <a href="#" onclick="loadContent('about-me.html')">
+          <p>About.me.md</p>
+        </a>
+        <a href="#" onclick="loadContent('about-page.html')">
+          <p>About.page.md</p>
+        </a>
 
-      <h3>Projects</h3>
-      <hr />
-      <a href="https://blog.trgr.site" target="_blank">
-        <p>Blog >></p>
-      </a>
-      <a href="https://school.trgr.site" target="_blank">
-        <p>School-notes >></p>
-      </a>
-      <a href="https://subliminal.trgr.site" target="_blank">
-        <p>Subliminal.OS >></p>
-      </a>
-    </nav>
-    <main id="content">
-      <!-- Content loaded here -->
-    </main>
-  </section>
-</body>
-<script src="src/js/theme.js"></script>
-<script src="src/js/change-page.js"></script>
-<script src="src/js/menu.js"></script>
-<script src="src/js/shortcuts.js"></script>
-
+        <h3>Projects</h3>
+        <hr />
+        <a href="#" onclick="loadContent('proj_blog.html')">
+          <p>Blog</p>
+        </a>
+        <a href="#" onclick="loadContent('proj_notes.html')">
+          <p>Notes</p>
+        </a>
+        <a href="https://subliminal.trgr.site" target="_blank">
+          <p>Subliminal.OS >></p>
+        </a>
+      </nav>
+      <main id="content">
+        <!-- Content loaded here -->
+      </main>
+    </section>
+  </body>
+  <script src="src/js/theme.js"></script>
+  <script src="src/js/change-page.js"></script>
+  <script src="src/js/menu.js"></script>
+  <script src="src/js/shortcuts.js"></script>
 </html>
