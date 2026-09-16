@@ -111,6 +111,42 @@ nav {
     >a:hover {
         text-decoration: underline;
     }
+
+    >.project {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-inner-small);
+
+        /* Match the default <p> margins used by the Pages links */
+        margin-block: 1em;
+    }
+
+    >.project >a:first-child {
+        flex: 1;
+
+        text-decoration: none;
+        color: var(--foreground-color);
+    }
+
+    >.project >a:hover {
+        text-decoration: underline;
+    }
+
+    >.project >.info-btn {
+        padding: 4px 8px;
+
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+
+        font-size: 16px;
+        text-decoration: underline;
+        white-space: nowrap;
+    }
+
+    >.project >.info-btn:hover {
+        background-color: var(--foreground-color);
+        color: var(--background-color);
+    }
 }
 
 main {
